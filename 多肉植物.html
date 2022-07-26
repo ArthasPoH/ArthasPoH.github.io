@@ -35,7 +35,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <!--上方1號格子-->
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                <a class="nav-link active" aria-current="page" href="ㄎ一ㄤ首頁.html">首頁</a>
               </li>
               <!--上方2號格子-->
               <li class="nav-item">
@@ -89,65 +89,34 @@
     </div>
     </nav>
     </header>
-  <!--相片的區塊-->
+  <!--顯示的區塊-->
   <section id='latest'>       
     <div class="container">
       <div class='row'>
         <div class='col-md-12 text-center'>
-
-        </div>
-        <div class="row">
-          <div class='col-md-4 text-center'>
-            <!---1號陣營--->
-            <div class='outer'>
-              <a href='single.html'>
-                <div class='upper'>
-                <img src='pictures/77845097_p0.jpg'>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="column">
+                <div class="updata">
+                  <form method="post" enctype="multipart/form-data">
+                  <p><input type="file" id="file" name="file"></p>
+                  <p><input type=submit value=Upload></p>
+                  <!--"data:image/jpeg;base64,{{ img_data }}"-->
+                  <img src="pictures/inner.png" id="img-upload" alt="img_data" class="img-upload" width="500" height="350"/>
+                  </form>
                 </div>
-                <div class='lower'>
-                  <h3>專案名稱</h3>
-                  <span>專案簡介</span>
-                  <h4>參與人數：0</h4>
-                  <span><i class="fas fa-map-marker-alt"></i> 主編人：</span><br>
-                  <span><i class="fa-solid fa-bookmark"></i> 使用編碼：</span>
-                </div>
-              </a>
             </div>
-          </div>
-          <div class='col-md-4 text-center'>
-            <!---2號陣營--->
-            <div class='outer'>
-              <a href='single.html'>
-                <div class='upper'>
-                <img src='pictures/77845097_p0.jpg'>
-                </div>
-                <div class='lower'>
-                  <h3>專案名稱</h3>
-                  <span>專案簡介</span>
-                  <h4>參與人數：0</h4>
-                  <span><i class="fas fa-map-marker-alt"></i> 主編人：</span><br>
-                  <span><i class="fa-solid fa-bookmark"></i> 使用編碼：</span>
-                </div>
-              </a>
             </div>
-          </div>
-          <div class='col-md-4 text-center'>
-            <!---3號陣營--->
-            <div class='outer'>
-              <a href='single.html'>
-                <div class='upper'>
-                <img src='pictures/77845097_p0.jpg'>
+            <div class="col-md-8">
+              <div class="column">
+                <div class="show">
+                  <h1>{{ data.label }}</h1>
+                  <textarea id="show" name="show" rows="20" cols="50">
+                      {{ data.content }}
+                  </textarea>
                 </div>
-                <div class='lower'>
-                    <h3>專案名稱</h3>
-                    <span>專案簡介</span>
-                    <h4>參與人數：0</h4>
-                    <span><i class="fas fa-map-marker-alt"></i> 主編人：</span><br>
-                    <span><i class="fa-solid fa-bookmark"></i> 使用編碼：</span>
-                  </div>
-              </a>
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
